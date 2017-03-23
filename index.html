@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Travel Guides and Tips</title>
+    <meta charset="UTF-8">
+    <script language="javascript" src="libraries/p5.js"></script>
+    <!-- uncomment lines below to include extra p5 libraries -->
+    <script language="javascript" src="libraries/p5.dom.js"></script>
+    <script language="javascript" src="libraries/p5.sound.js"></script>
+    <script language="javascript" src="sketch.js"></script>
+    <!-- this line removes any default padding and style. you might only need one of these values set. -->
+    <!--<style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>-->
+</head>
+
+<body>
+    <h1>Welcome to my site</h1>
+    <p> Here you will find useful travel suggestions</p>
+    <p>Enjoy your day!</p>
+
+    <!--<form action="http://pooleapp.com/stash/7be9d4ae-c277-478d-8d55-747117530728/" method="post">
+        <input type="hidden" name="redirect_to" value="thank_you.html" />
+        <input type="text" text="Name" name="name" />
+        <input type="text" name="email" />
+        <input type="text" name="comments" />
+        <input type="submit" value="submit" />
+    </form>-->
+    <form name='comments' action='/thank_you.html' method='post' id='comment-form' class='comment-form'><input type='hidden' name='form-name' value='comments' />
+        <h2>Leave your comment</h2>
+
+        <input type="hidden" name="redirect_to" value="/thank_you.html">
+
+        <label for="name">Your name</label><br>
+        <input type="text" name="name" style="width:500px;font-size:14pt;" /><br><br>
+
+        <label for="email">Your email <span>(will not be publicly shown, and I'll never spam you)</span></label><br>
+        <input type="text" name="email" style="width:500px;font-size:14pt;" /><br><br>
+
+        <label for="url">Your website <span>(optional)</span></label><br>
+        <input type="text" name="url" style="width:500px;font-size:14pt;" /><br><br>
+
+        <label for="comment">Your comment</label><br>
+        <textarea name="comment" class="comment-text" style="width:500px;height:200px;font-size:14pt;"></textarea><br>
+        <input type="submit" value="Post comment" class="submit" />
+    </form>
+</body>
+
+</html>
